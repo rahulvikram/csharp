@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learning", "learning\learning.csproj", "{C050C1C8-9576-4092-AB34-529EACAEB4BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "learning", "learning\learning.csproj", "{C050C1C8-9576-4092-AB34-529EACAEB4BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBF151B9-D734-4D5A-8D7B-41025305C449}
 	EndGlobalSection
 EndGlobal

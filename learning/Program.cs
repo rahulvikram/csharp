@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using equality;
-using learning
+using learning;
 
 public partial class Program
 {
@@ -31,7 +31,9 @@ public partial class Program
 
         Console.WriteLine(commonapp.PrintInfo());
 
-        equality.Equality.Classes();
+        Equality.Classes();
 
+        Cash cash = new Cash(100, "USD");
+        cash.ProcessPayment();
     }
 }

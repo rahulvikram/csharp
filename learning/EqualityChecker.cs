@@ -9,7 +9,7 @@ namespace equality
 {
     public class Equality
     {
-        public static void Classes()
+        public static void Classes() // method, NOT a class
         {
             Payment p1 = new Payment(3000, "USD");
             Payment p2 = new Payment(3000, "USD");

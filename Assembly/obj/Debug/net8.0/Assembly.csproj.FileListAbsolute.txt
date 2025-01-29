@@ -1,0 +1,13 @@
+C:\Users\vikramr\source\repos\csharp\Assembly\bin\Debug\net8.0\Assembly.deps.json
+C:\Users\vikramr\source\repos\csharp\Assembly\bin\Debug\net8.0\Assembly.dll
+C:\Users\vikramr\source\repos\csharp\Assembly\bin\Debug\net8.0\Assembly.pdb
+C:\Users\vikramr\source\repos\csharp\Assembly\obj\Debug\net8.0\Assembly.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vikramr\source\repos\csharp\Assembly\obj\Debug\net8.0\Assembly.AssemblyInfoInputs.cache
+C:\Users\vikramr\source\repos\csharp\Assembly\obj\Debug\net8.0\Assembly.AssemblyInfo.cs
+C:\Users\vikramr\source\repos\csharp\Assembly\obj\Debug\net8.0\Assembly.csproj.CoreCompileInputs.cache
+C:\Users\vikramr\source\repos\csharp\Assembly\obj\Debug\net8.0\Assembly.sourcelink.json
+C:\Users\vikramr\source\repos\csharp\Assembly\obj\Debug\net8.0\Assembly.dll
+C:\Users\vikramr\source\repos\csharp\Assembly\obj\Debug\net8.0\refint\Assembly.dll
+C:\Users\vikramr\source\repos\csharp\Assembly\obj\Debug\net8.0\Assembly.pdb
+C:\Users\vikramr\source\repos\csharp\Assembly\obj\Debug\net8.0\ref\Assembly.dll
+C:\Users\vikramr\source\repos\csharp\Assembly\obj\Debug\net8.0\Assembly.csproj.AssemblyReference.cache

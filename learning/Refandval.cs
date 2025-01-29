@@ -83,6 +83,11 @@ public struct Payment
         return p1.amount != p2.amount || p1.currency != p2.currency;
     }
 
+    public static implicit operator Payment(learning.CreditCard v)
+    {
+        throw new NotImplementedException();
+    }
+
     // Override Equals method for consistency
     public override bool Equals(object obj)
     {

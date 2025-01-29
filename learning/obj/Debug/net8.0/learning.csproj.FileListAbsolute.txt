@@ -28,3 +28,8 @@ C:\Users\vikramr\source\repos\csharp\learning\bin\Debug\net8.0\learning.dll
 C:\Users\vikramr\source\repos\csharp\learning\bin\Debug\net8.0\learning.pdb
 C:\Users\vikramr\source\repos\csharp\learning\obj\Debug\net8.0\learning.genruntimeconfig.cache
 C:\Users\vikramr\source\repos\csharp\learning\obj\Debug\net8.0\ref\learning.dll
+C:\Users\vikramr\source\repos\csharp\learning\bin\Debug\net8.0\Assembly.dll
+C:\Users\vikramr\source\repos\csharp\learning\bin\Debug\net8.0\Assembly.pdb
+C:\Users\vikramr\source\repos\csharp\learning\obj\Debug\net8.0\learning.csproj.AssemblyReference.cache
+C:\Users\vikramr\source\repos\csharp\learning\obj\Debug\net8.0\learning.csproj.CopyComplete
+C:\Users\vikramr\source\repos\csharp\learning\bin\Debug\net8.0\Newtonsoft.Json.dll

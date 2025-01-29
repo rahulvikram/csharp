@@ -88,6 +88,11 @@ public struct Payment
         throw new NotImplementedException();
     }
 
+    public static implicit operator Payment(learning.Cash v)
+    {
+        throw new NotImplementedException();
+    }
+
     // Override Equals method for consistency
     public override bool Equals(object obj)
     {

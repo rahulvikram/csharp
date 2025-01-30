@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6lxjysTHoWP6mvMDhQYjPuRykmv499nTI2aTnGXpxsa926QGETOHMum1K0OqF+qAzVzVn1BNuyoOFVx5pOwEyA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vikramr\\source\\repos\\csharp\\essentials2\\essentials2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vikramr\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

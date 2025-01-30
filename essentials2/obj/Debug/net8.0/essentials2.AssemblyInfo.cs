@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("essentials2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0eaf637c4f1f0c9f512eed2aebc997ce37ce000a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffd4bbfc273039ebc49b0a111c4dacd72655fa17")]
 [assembly: System.Reflection.AssemblyProductAttribute("essentials2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("essentials2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

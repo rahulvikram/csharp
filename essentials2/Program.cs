@@ -42,6 +42,25 @@ namespace essentials2
             second = temp;
         }
 
+        public static void PopulateDictionary<T>(Dictionary<string, T> companies) where T : Company, new()
+        {
+            companies.Add("Microsoft", new T { Name = "Microsoft", Location = "Redmond, WA", CEO = "Satya Nadella", YearFounded = new DateOnly(1975, 4, 15) });
+            companies.Add("Apple", new T { Name = "Apple", Location = "Cupertino, CA", CEO = "Tim Cook", YearFounded = new DateOnly(1988, 5, 30) });
+            companies.Add("Google", new T { Name = "Google", Location = "Mountain View, CA", CEO = "Sundar Pichai", YearFounded = new DateOnly(1998, 3, 23) });
+            companies.Add("Amazon", new T { Name = "Amazon", Location = "Seattle, WA", CEO = "Jeff Bezos", YearFounded = new DateOnly(1994, 7, 5) });
+            companies.Add("Intel", new T { Name = "Intel", Location = "Santa Clara, CA", CEO = "Pat Gelsinger", YearFounded = new DateOnly(1968, 7, 18) });
+        }
+
+        public static void AddCompany<T>(Dictionary<string, T> companies, string key, T company) where T : Company
+        {
+            if (companies.TryAdd(key, company))
+            {
+                Console.WriteLine($" {key} successfully added to database.");
+                return;
+            }
+            Console.WriteLine($"Error: {key} already exists in database.");
+        }
+
         public static void Main(string[] args)
         {
             Console.WriteLine("Main executed.");
@@ -92,8 +111,45 @@ namespace essentials2
                 Console.WriteLine(al[i]);
             }
 
-            CollectionSamples.Queue();
-            CollectionSamples.Stack();
+            // Working with keyed collections
+            Dictionary<string, Company> companies = new Dictionary<string, Company>(); // using a dictionary
+            PopulateDictionary(companies);
+
+
+            //if (companies.ContainsKey("estfsddfds"))
+            //{
+            //    Console.WriteLine("Microsoft is in the dictionary.");
+            //}
+            //else
+            //{
+            //    throw new Exception("ERROR: Key does not exist.");
+            //}
+
+            AddCompany(companies, "Intel", new Company("Intel", "Santa Clara, CA", "Pat Gelsinger", new DateOnly(1965, 4, 10)));
+
+            // Print the populated dictionary
+            foreach (var kvp in companies)
+            {
+                Console.WriteLine($"{kvp.Key}: {kvp.Value.Name}, {kvp.Value.Location}, {kvp.Value.CEO}, {kvp.Value.YearFounded}");
+            }
+
+            try
+            {
+                int[] nums = {1, 2, 3, 4, 5, 6};
+                for (int i = 0; i < 24; i++)
+                {
+                    Console.WriteLine(nums[i]);
+                }
+            }
+            catch (Exception ex) when (ex is IndexOutOfRangeException || ex is ArgumentOutOfRangeException)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            finally
+            {
+                Console.WriteLine("Error handled.");
+            }
         }
     }
 }

@@ -151,6 +151,13 @@ namespace essentials2
             //{
             //    Console.WriteLine("Error handled.");
             //}
+
+            Delegate del = WriteHello;
+        }
+
+        static void WriteHello(string name)
+        {
+            Console.WriteLine($"Hello, {name}!");
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics.CodeAnalysis;
+using essentials2;
 
 namespace essentials2
 {
@@ -33,7 +34,7 @@ namespace essentials2
             first = second;
             second = temp;
         }
-        
+
         // this works exactly like void functions in C++ that take reference parameters
         public static void SwapReal<T>(ref T first, ref T second) // specify generic type parameter, T , must provide type when calling method
         {
@@ -133,23 +134,23 @@ namespace essentials2
                 Console.WriteLine($"{kvp.Key}: {kvp.Value.Name}, {kvp.Value.Location}, {kvp.Value.CEO}, {kvp.Value.YearFounded}");
             }
 
-            try
-            {
-                int[] nums = {1, 2, 3, 4, 5, 6};
-                for (int i = 0; i < 24; i++)
-                {
-                    Console.WriteLine(nums[i]);
-                }
-            }
-            catch (Exception ex) when (ex is IndexOutOfRangeException || ex is ArgumentOutOfRangeException)
-            {
-                Console.WriteLine(ex.Message);
-                throw;
-            }
-            finally
-            {
-                Console.WriteLine("Error handled.");
-            }
+            //try
+            //{
+            //    int[] nums = {1, 2, 3, 4, 5, 6};
+            //    for (int i = 0; i < 24; i++)
+            //    {
+            //        Console.WriteLine(nums[i]);
+            //    }
+            //}
+            //catch (Exception ex) when (ex is IndexOutOfRangeException || ex is ArgumentOutOfRangeException)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //    throw;
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Error handled.");
+            //}
         }
     }
 }

@@ -10,8 +10,20 @@ namespace essentials2
 {
     public class Company
     {
+        private string fName;
+        private string lName;
+
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Name
+        {
+            get => $"{fName} {lName}";
+            init
+            {
+                var names = value.Split(' ');
+                fName = names[0];
+                lName = names.Length > 1 ? names[1] : string.Empty;
+            }
+        }
         public string Location { get; set; }
         public string? CEO { get; set; }
         public DateOnly YearFounded { get; set; }
@@ -24,6 +36,8 @@ namespace essentials2
             CEO = ceo;
             YearFounded = year;
         }
+
+        public override string ToString() => $"{Name}, {Location}, {CEO}, {YearFounded}";
     }
 
     public partial class Program
@@ -152,12 +166,59 @@ namespace essentials2
             //    Console.WriteLine("Error handled.");
             //}
 
-            Delegate del = WriteHello;
+            //// adding our own custom delegate to an existing event handler
+            //Console.CancelKeyPress += OnCancel;
+
+            //// Delegates are useful for passing methods as parameters to other methods (like function ptrs)
+            //Delegate del = WriteHello; // create a delegate instance (pointer to a function)
+            //del.DynamicInvoke("Rahul"); // call the delegate instance
+
+            //// using the delegate samples class
+            //DelegateSamples.Del del2 = WriteHello;
+            //DelegateSamples.PassWork(del2, "All");
+
+            //// add a new delegate method to the event
+            //DelegateSamples.SomethingHappened += WriteHello;
+            //DelegateSamples.doWork("Delegation and event");
+
+            //for (int i = 0; i <= i*i; i++)
+            //{
+            //    Console.WriteLine($"This will never end {i}");
+            //}
+            DelegateSamples.PassWork(WriteHello, "All");
+            DelegateSamples.PassLogic(CalcLength);
+
+            // passing lambda expressions as delegates to methods
+            // this eliminates the need to define CalcLength
+            DelegateSamples.PassLogic((s) => s.Length);
+
+            // Lambda function
+            //funcname type params    function body
+            var t = (string s) => Console.WriteLine(s);
+            t("soous");
         }
 
         static void WriteHello(string name)
         {
             Console.WriteLine($"Hello, {name}!");
+
+            // clean up the event handler, remove the delegate method
+            //DelegateSamples.SomethingHappened -= WriteHello;
         }
+
+        // matches with Func<string, int> delegate pattern (takes string returns int)
+        static int CalcLength(string inp)
+        {
+            return inp.Length;
+        }
+
+        //static void OnCancel(object sender, ConsoleCancelEventArgs args)
+        //{
+        //    Console.WriteLine(args.ToString());
+        //    Console.WriteLine("Ctrl+C pressed.");
+        //    args.Cancel = false;
+        //    Console.CancelKeyPress -= OnCancel;
+        //}
+
     }
 }
